@@ -12,6 +12,7 @@ function draw() {
   for (let i = 0; i < b.length; i++) {
     text(b[i], 20, i * 20 + 20);
   }*/
+  fill(255);
   textSize(30);
   textAlign(CENTER);
   text(b[index], width / 2, height / 2);
