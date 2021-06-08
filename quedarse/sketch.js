@@ -29,3 +29,6 @@ function mousePressed() {
     posy = random(10,height/2);
 
 }
+function preload() {
+  fontBold = loadFont('assets/maquina.ttf');
+}
