@@ -30,5 +30,5 @@ function mousePressed() {
 
 }
 function preload() {
-  fontBold = loadFont('assets/maquina.ttf');
+  fontBold = loadFont('maquina.ttf');
 }
