@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
   /*
   for (let i = 0; i < b.length; i++) {
     text(b[i], 20, i * 20 + 20);
