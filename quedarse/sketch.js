@@ -5,6 +5,8 @@ let posy = 200;
 
 let b = ["Yo no sé de pájaros,no conozco la historia del fuego. Pero creo que mi soledad debería tener alas. AP","es demasiado tarde y no hay nada peor que un demasiado tarde CB","¿Qué más quiere, qué más quiere? Átelo pronto a su muñeca, déjelo latir en libertad, imítelo anhelante."];
 
+var fontBold;//name of the font
+
 function setup() {
   createCanvas(400, 400);
 }
@@ -14,6 +16,7 @@ function draw() {
  
   fill(255);
   textFont(fontRegular);
+  textAling(CENTER);
   textSize(tam);
   textAlign(CENTER);
   text(b[index], posx, posy ,170, 180);
