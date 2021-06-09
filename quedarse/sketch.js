@@ -16,7 +16,7 @@ function draw() {
  
   fill(255);
   textFont(fontBold);
-  textAling(CENTER);
+  textAlign(CENTER);
   textSize(tam);
   text(b[index], posx, posy ,170, 180);
 }
