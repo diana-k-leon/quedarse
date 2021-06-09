@@ -18,7 +18,6 @@ function draw() {
   textFont(fontBold);
   textAling(CENTER);
   textSize(tam);
-  textAlign(CENTER);
   text(b[index], posx, posy ,170, 180);
 }
 function mousePressed() {
