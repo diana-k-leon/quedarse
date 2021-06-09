@@ -15,7 +15,7 @@ function draw() {
   background(0);
  
   fill(255);
-  textFont(fontRegular);
+  textFont(fontBold);
   textAling(CENTER);
   textSize(tam);
   textAlign(CENTER);
