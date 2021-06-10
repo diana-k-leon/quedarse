@@ -67,6 +67,11 @@ function preload() {
     imagenes[2] = loadImage("pic_3.png" );
     imagenes[3] = loadImage("pic_4.png" ); 
     imagenes[4] = loadImage("pic_5.png" );
+    imagenes[5] = loadImage("pic_1.png" );
+    imagenes[6] = loadImage("pic_2.png" );
+    imagenes[7] = loadImage("pic_3.png" );
+    imagenes[8] = loadImage("pic_4.png" ); 
+    imagenes[9] = loadImage("pic_5.png" );
 }
 
 class BubbleText {
