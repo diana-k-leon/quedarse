@@ -4,10 +4,6 @@
 
  
 
-
- 
-//textFont(fontBold);
-
 var index = 0;
 let posx = 0;
 let posy = 0;
@@ -28,7 +24,7 @@ let b = ["¿Se deja el barrio alguna vez?",
 var fontBold;//name of the font
 
 let textos = [];
-let imagenes = [];
+let imagenes;
 let imgN = 0;
 let cantTextos = 1;
 
@@ -46,7 +42,7 @@ function draw() {
   fill(255);
   background(0);
   
-  //image(imagenes[imgN],0,0,width,height);
+  image(imagenes,0,0,width,height);
    
   for (let i=0; i < cantTextos; i++) {
      textos[i].move();
@@ -67,7 +63,7 @@ function mousePressed() {
 function preload() {
  
   for (let i=0; i < 3 ; i++) {
-    imagenes[i] = loadImage("pic_"+ i + ".png" );
+    imagenes = loadImage("assets/pic_0.png" );
   }      
 }
 
@@ -82,7 +78,7 @@ class BubbleText {
   }
   move() {
     if(this.x <  this.miLimite )
-       this.x = this.x + 1;
+       this.x = this.x + 2;
   }
   show() {
     noStroke();
