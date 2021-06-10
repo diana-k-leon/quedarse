@@ -99,9 +99,9 @@ class BubbleText {
   }
   show() {
     noStroke();
-    fill(0,200);
-    rectMode(CENTER);
-    rect(this.x,this.y,width,this.tami*2);
+    //fill(0,200);
+    //rectMode(CENTER);
+    //rect(this.x,this.y,width,this.tami*2);
     fill(255);
     textSize(this.tami);
     textFont(fontBold);
