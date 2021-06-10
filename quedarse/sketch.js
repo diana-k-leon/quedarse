@@ -91,7 +91,7 @@ class BubbleText {
     this.y = random (150,700);
     this.text = t;
     this.tami=random(20,80);
-    this.miLimite = random (400);
+    this.miLimite = random (200,1000);
   }
   move() {
     if(this.x <  this.miLimite )
