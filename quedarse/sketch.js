@@ -17,6 +17,16 @@ let b = ["¿Se deja el barrio alguna vez?",
          "¿Hacia dónde?",
          "¿Me dejarán pasar?",
          "¿a qué intensidades viviste?",
+         "¿Se puede bucear la risa?",
+         "¿Se deja el barrio alguna vez?",
+         "¿Qué cambió para no cambiar jamás?",
+         "¿Se puede enfrascar un sueño?",
+         "¿una pregunta es para siempre?",
+         "¿qué forma tiene el límite? ",
+         "¿Y los pájaros?",
+         "¿Hacia dónde?",
+         "¿Me dejarán pasar?",
+         "¿a qué intensidades viviste?",
          "¿Se puede bucear la risa?"
         ];
 
