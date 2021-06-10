@@ -76,7 +76,7 @@ class BubbleText {
     this.y = random (50,400);
     this.text = t;
     this.tami=random(10,40);
-    this.miLimite = random (width);
+    this.miLimite = random (400);
   }
   move() {
     if(this.x <  this.miLimite )
@@ -84,6 +84,9 @@ class BubbleText {
   }
   show() {
     noStroke();
+    fill(0,100);
+    rectMode(CENTER);
+    rect(this.x,this.y,width,this.tami*2);
     fill(255);
     textSize(this.tami);
     textFont(fontBold);
