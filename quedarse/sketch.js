@@ -73,7 +73,7 @@ class BubbleText {
   
   constructor(t) {
     this.x = 0;
-    this.y = random (50,400);
+    this.y = random (150,700);
     this.text = t;
     this.tami=random(10,40);
     this.miLimite = random (400);
