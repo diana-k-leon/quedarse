@@ -90,7 +90,7 @@ class BubbleText {
     this.x = 0;
     this.y = random (150,700);
     this.text = t;
-    this.tami=random(40,120);
+    this.tami=random(20,80);
     this.miLimite = random (400);
   }
   move() {
