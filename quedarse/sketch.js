@@ -73,7 +73,7 @@ function preload() {
     fontBold = loadFont('maquina.ttf');
     imagenes[0] = loadImage("pic_1.png" );
     imagenes[1] = loadImage("pic_2.png" );
-    imagenes[2] = loadImage("pic_3.png" );
+    imagenes[2] = loadImage("pic_9.png" );
     imagenes[3] = loadImage("pic_4.png" ); 
     imagenes[4] = loadImage("pic_5.png" );
     imagenes[5] = loadImage("pic_6.png" );
