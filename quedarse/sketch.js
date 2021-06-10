@@ -1,5 +1,5 @@
 
-//fontBold = loadFont('maquina.ttf');
+//
 //textFont(fontBold);
 
  
@@ -24,7 +24,7 @@ let b = ["¿Se deja el barrio alguna vez?",
 var fontBold;//name of the font
 
 let textos = [];
-let imagenes. = [];
+let imagenes = [];
 let imgN = 0;
 let cantTextos = 1;
 
@@ -61,6 +61,7 @@ function mousePressed() {
 }
 
 function preload() {
+    fontBold = loadFont('maquina.ttf');
     imagenes[0] = loadImage("assets/pic_1.png" );
     imagenes[1] = loadImage("assets/pic_2.png" );
     imagenes[2] = loadImage("assets/pic_3.png" );
@@ -85,7 +86,7 @@ class BubbleText {
     noStroke();
     fill(255);
     textSize(this.tami);
-  
+    textFont(fontBold);
     text(this.text,this.x,this.y);
   }
 }
