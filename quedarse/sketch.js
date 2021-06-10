@@ -1,5 +1,11 @@
 
+//fontBold = loadFont('maquina.ttf');
+//textFont(fontBold);
 
+ 
+
+
+ 
 //textFont(fontBold);
 
 var index = 0;
@@ -24,6 +30,7 @@ var fontBold;//name of the font
 let textos = [];
 let imagenes = [];
 let imgN = 0;
+let cantTextos = 1;
 
 function setup() {
   createCanvas(displayWidth, displayHeight);
@@ -39,7 +46,7 @@ function draw() {
   fill(255);
   background(0);
   
-  image(imagenes[imgN],0,0,width,height);
+  //image(imagenes[imgN],0,0,width,height);
    
   for (let i=0; i < cantTextos; i++) {
      textos[i].move();
@@ -49,7 +56,7 @@ function draw() {
 }
 function mousePressed() {
   if (cantTextos < b.length) 
-    cantTextos++;
+      cantTextos++;
   
   if (imgN < imagenes.length) 
          imgN++;
@@ -58,9 +65,9 @@ function mousePressed() {
 }
 
 function preload() {
-  fontBold = loadFont('maquina.ttf');
-  for (let i=0; i < 9 ; i++) {
-     imagenes[i] = loadImage("pic_"+ i+1 + ".png" );
+ 
+  for (let i=0; i < 3 ; i++) {
+    imagenes[i] = loadImage("pic_"+ i + ".png" );
   }      
 }
 
@@ -81,8 +88,7 @@ class BubbleText {
     noStroke();
     fill(255);
     textSize(this.tami);
-    textFont(fontBold);
+  
     text(this.text,this.x,this.y);
   }
 }
- 
