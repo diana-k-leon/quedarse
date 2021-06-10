@@ -5,21 +5,25 @@
 var index = 0;
 let posx = 0;
 let posy = 0;
-let cantTextos = 2;
+
 let b = ["¿Se deja el barrio alguna vez?",
          "¿Qué cambió para no cambiar jamás?",
          "¿Se puede enfrascar un sueño?",
-         "¿Se deja el barrio alguna vez?",
-         "¿Se puede enfrascar un sueño?",
-         "¿Se deja el barrio alguna vez?",
-         "¿Se deja el barrio alguna vez?",
-         "¿Se puede enfrascar un sueño?",
+         "¿una pregunta es para siempre?",
+         "¿qué forma tiene el límite? ",
+         "¿Y los pájaros?",
+         "¿Hacia dónde?",
+         "¿Me dejarán pasar?",
+         "¿a qué intensidades viviste?",
+         "¿Se puede bucear la risa?"
         ];
 
 
 var fontBold;//name of the font
 
 let textos = [];
+let imagenes = [];
+let imgN = 0;
 
 function setup() {
   createCanvas(displayWidth, displayHeight);
@@ -34,7 +38,9 @@ function setup() {
 function draw() {
   fill(255);
   background(0);
- 
+  
+  image(imagenes[imgN],0,0,width,height);
+   
   for (let i=0; i < cantTextos; i++) {
      textos[i].move();
      textos[i].show();
@@ -44,10 +50,18 @@ function draw() {
 function mousePressed() {
   if (cantTextos < b.length) 
     cantTextos++;
+  
+  if (imgN < imagenes.length) 
+         imgN++;
+  else
+         imgN = 0;
 }
 
 function preload() {
   fontBold = loadFont('maquina.ttf');
+  for (let i=0; i < 9 ; i++) {
+     imagenes[i] = loadImage("pic_"+ i+1 + ".png" );
+  }      
 }
 
 class BubbleText {
